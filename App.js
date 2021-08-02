@@ -29,8 +29,10 @@ function App() {
   }
 
   useEffect(() => {
+    //Put google-services.json file in android/app
+
     GoogleSignin.configure({
-      webClientId: '',//Enter your webclient ID of Client type 3
+      webClientId: '', //Enter your webclient ID of Client type 3 from google-services.json
       offlineAccess: true,
       scopes: scope,
     });
